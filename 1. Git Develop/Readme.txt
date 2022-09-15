@@ -2,25 +2,40 @@ KỊCH BẢN THỰC HIỆN VỚI GIT COMMAND LINE
 ---------------------------------------
 1) Hãy thực hiện clone Remote Repositories trên github về máy tính.
 $ git clone ... (đồng bộ tài nguyên về máy tính, khi mới bắt đầu tạo github)
-$ git pull origin <brand name>  (git pull một nhánh cụ thể nào đó về máy)
+$ git pull origin develop  (git pull một nhánh cụ thể nào đó về máy)
 $ git pull (git pull toàn bộ nhánh về máy ) = $ git pull origin (2 câu lệnh này sẽ như nhau, "origin" là bao gồm tất cả các nhánh)
 
 2) Hãy kiểm tra các thông số cấu hình trong môi trường git:
 $ git config --list (xem toàn bộ thông tin (email, user.name,..) của git)
-$ git pull
+-> Khi muốn thoát cửa sổ cấu hình ":q" (quit)
+$ git pull | git pull origin
 $ git pull origin develop
 $ git pull origin main
 
 3) Hãy tiến hành tạo ra các nhánh sau:
-- release
-- develop
-- feature
+- release (git checkout -b release)
+- develop (git checkout -b develop)
+- feature (git checkout -b feature)
+- fixbug (git checkout -b feature)
+
+- main (mặc định được github tạo ra khi chúng ta tạo ra Repository)
+  - Nhánh chính trong dự án.
+  - Luôn luôn thể hiện đây là tài nguyên chuẩn nhất trước khi deloy lên production.
+- release (chúng ta tạo ra, khi cần tổ chức các phân nhánh phù hợp với thực tế).
+  - Nhánh chính trong dự án.
+  - Chứa tài nguyên hoàn thiện nhất trước khi merge lên nhánh main để deloy lên production.
+  - PL/PM/Developer and Tester/QA.
+
 - Lệnh sử dụng:
 $ git checkout -b <branch name> 'Create a new branch
-$ git checkout <branch name>    'switch into branch
+$ git checkout <branch name>    'switch into branch (sẽ hiện ra tài nguyên tương ứng của nhánh đó)
+$ git checkout develop (chuyển sang nhánh develop để làm việc)
+
 $ git ls-remote                 'Check the branch information on the Remote Repository (load tất cả các nhánh trên remote)
-$ git branch -v                 'list of branches (kiểm tra nhánh trên local)
-git branch -d <branch name>
+
+$ git branch -v                 'list of branches (kiểm tra nhánh trên databases git local)
+git branch -d <branch name> (chạy lệnh này chỉ có tác dụng xóa nhánh ở databases git local)
+git branch -d develop
 
 - Delete Local Branch:
 git branch -v (kiểm tra các nhánh dưới local)
@@ -34,14 +49,28 @@ git push origin --delete test_thu (xóa đi nhánh nào đó)
 
 4) Hãy đưa các nhánh mới tạo ra lên Github:
 $ git push --set-upstream origin <branch name>
-Ví dụ: git push --set-upstream origin abc
+Ví dụ: 
+   git push --set-upstream origin develop
+   git push --set-upstream origin fixbug
 
 5) Khởi tạo dự án bắt đầu với git và đánh dấu tag:
 5.1. Initial Project:
+- Trong databases git local có 3 phân vùng dữ liệu:
+   1) WorkSpaces (nơi chứa toàn bộ tài nguyên đồng bộ về và chúng ta làm việc được với tài nguyên ở đó).
+   2) Staging Area (vùng này được git mã hóa và lưu git databases local, chứa các tài nguyên đã được git checking (đánh dấu)).
+   3) Repository Local (Commited), vùng này được git mã hóa, dữ liệu đưa đến vùng này tức là đã hoàn thành xong và lưu db của git.
+* Lưu ý:
+- Dữ liệu muốn đẩy được lên github thì bắt buộc phải được đưa về đến vùng commited này.
+- Do vậy trình tự thực hiện sẽ là:
+  1) git add .
+  2) git commit -am "...."
+  3) git push | git pull
+   
 - Đưa tài nguyên dự án vào git databases local.
 $ git add network.txt, securities.txt,...
 $ git add Sources/* (add folder lên github, ví dụ: git add folderB/*)
-$ git add .
+$ git add . (dấu chấm là tất cả những gì đã tạo ra và chúng ta muốn checking nó để đưa lên github)
+
 $ git restore --staged folderA/folderB/*  'to unstage (đưa từ staging area --> working base (nơi làm việc)
 $ git restore --staged <file> 'to unstage
 $ git commit -am "Initialize the project structure"
