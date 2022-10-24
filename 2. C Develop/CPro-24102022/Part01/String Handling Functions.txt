@@ -1,0 +1,40 @@
+String Handling Functions
+
+- strcat()	 It is used to concatenate(combine) two strings
+- strlen()	 It is used to show the length of a string
+- strrev()	 It is used to show the reverse of a string
+- strcpy() Copies one string into another
+- strcmp() It is used to compare two string
+
+strcat("hello", "world");
+
+int j = strlen("Hello World");
+int i=strcmp("imic", "technology");
+printf("%d %d",j,i);
+
+strcpy() function:
+#include<stdio.h>
+#include<string.h>
+
+int main()
+{
+    char s1[50], s2[50];
+    strcpy(s1, "Ha ha hi hi :D");     
+    strcpy(s2, s1);    
+    printf("%s\n", s2);    
+    return(0);
+}
+
+strrev() function:
+#include <stdio.h>
+
+int main()
+{ 
+    char s1[50]; 
+  
+    printf("Enter your string: "); 
+    gets(s1);  
+    printf("\nYour reverse string is: %s",strrev(s1)); 
+    return(0); 
+}
+
