@@ -1,6 +1,7 @@
 #include<stdio.h>
 
 //1. Khai bao Protype
+/* Có 2 tham số đầu vào kiểu số nguyên */
 int multiply(int a, int b);
 
 int main6() 

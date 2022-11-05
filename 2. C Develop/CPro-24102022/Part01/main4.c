@@ -17,7 +17,7 @@ int main4() {
 
    //displaying destination string
    printf("String after concatenation: %s", str1);
-	 printf("String after concatenation: %s", str2);
+	printf("String after concatenation: %s", str2);
 	 
    return(0);
 }
