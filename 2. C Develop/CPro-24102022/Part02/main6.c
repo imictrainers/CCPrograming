@@ -15,9 +15,10 @@ int main6() {
 	//2. Moi nhap
 	//printf("- Ban can may nhan vien");
 	//scanf("%d", &n);
-	n = 2;
+	//n = 2;
+	
 	//3. Khai bao bien struct
-	struct Employee emp[n];
+	struct Employee emp[2];
 	//struct Employee em;
 	
 	//4. Nhap thong tin cho cac nhan vien

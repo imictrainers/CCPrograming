@@ -17,13 +17,13 @@ struct Organisation
 //protype
 void show(struct Organisation);
 
-int main()
+int main7()
 {
   struct Organisation org = {"ĐH A", "GFG111",{278, "Mr A",5000}};   
   show(org);
 }
  
-void show(struct Organisation org )
+void show(struct Organisation org)
 {
   //Hiện thị thông tin chi tiết
   printf("Printing the Details :\n"); 

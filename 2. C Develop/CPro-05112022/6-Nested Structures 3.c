@@ -13,9 +13,9 @@ struct College
   } student1;
 }; 
   
-int main()
+int main6()
 {
-  struct College c = {"ĐH A", 7,{111, "Mr A", 278}};
+  struct College c = {"ĐH A", 7, {111, "Mr A", 278}};
   
   printf("College name : %s\n", c.college_name);
   printf("Ranking : %d\n", c.ranking);

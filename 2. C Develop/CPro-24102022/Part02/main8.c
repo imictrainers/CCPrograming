@@ -9,7 +9,7 @@ struct Student
     char gender[5];
 };
 
-int main() {
+int main8() {
 	//1. Khai bao bien 
 	int n;
 	int i;
@@ -21,7 +21,7 @@ int main() {
 	gets(str);
 	
 	//3. Khai bao bien struct
-	struct Student std[n];
+	struct Student std[5];
 	//struct Employee em;
 	
 	//4. Nhap thong tin cho cac nhan vien

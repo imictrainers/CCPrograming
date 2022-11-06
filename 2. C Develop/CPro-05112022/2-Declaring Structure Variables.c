@@ -8,6 +8,7 @@ struct Student
     char gender;
 };
 struct Student S1, S2;      //declaring variables of struct Student
+struct Student S3;
 
 //2) Declaring Structure variables with structure definition
 struct Student

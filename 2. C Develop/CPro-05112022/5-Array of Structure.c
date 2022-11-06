@@ -6,7 +6,7 @@ struct Employee
     int sal;
 };
 
-struct Employee emp[5];
+struct Employee emp[5];  //Khai báo ra 1 biến mảng struct
 int i, j;
 void ask()
 {
@@ -25,7 +25,7 @@ void ask()
         printf("\nSlary is %d", emp[i].sal);
     }
 }
-void main()
+void main5()
 {
     ask();
 }

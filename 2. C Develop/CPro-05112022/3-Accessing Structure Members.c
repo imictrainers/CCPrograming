@@ -10,7 +10,7 @@ struct Student
     char gender;
 };
 
-int main()
+int main3()
 {
     struct Student s1;    
     /*

@@ -13,7 +13,7 @@ struct Organisation
   } emp; 
 };  
 
-int main()
+int main66()
 {
     //1. Khai báo biến struct
     struct Organisation org;  

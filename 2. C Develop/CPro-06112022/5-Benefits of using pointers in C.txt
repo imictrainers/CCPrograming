@@ -1,0 +1,8 @@
+Benefits of using pointers in C
+1) Con trỏ hiệu quả hơn trong việc xử lý Array trong C và Struct trong C.
+2) Con trỏ cho phép các tham chiếu đến hàm và do đó giúp truyền hàm dưới dạng 
+đối số cho các hàm khác.
+3) Con trỏ cũng cung cấp các phương tiện mà một hàm trong C có thể thay đổi 
+các đối số gọi của nó.
+4) Nó làm giảm độ dài của chương trình và thời gian thực thi của nó.
+5) Nó cho phép ngôn ngữ C hỗ trợ quản lý Bộ nhớ động (Dynamic Memory Management).

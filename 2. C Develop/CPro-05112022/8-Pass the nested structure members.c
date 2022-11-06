@@ -18,7 +18,7 @@ void show(char organisation_name[],
           int employee_id, 
           char name[], int salary);
 
-int main()
+int main8()
 {
   struct Organisation org = {"ĐH A", "GFG111", {278, "Mr A",5000}};     
   show(org.organisation_name, org.org_number,

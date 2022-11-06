@@ -15,7 +15,7 @@ struct Organisation
   struct Employee emp; 
 };
   
-int main()
+int main61()
 {
   // Khai báo biến struct
   struct Organisation org; 

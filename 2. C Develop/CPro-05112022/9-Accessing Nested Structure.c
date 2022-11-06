@@ -50,7 +50,7 @@ struct student_detail
   struct college_details clg;
 } stu, *stu_ptr;
 
-int main()
+int main9()
 {
   struct student_detail stu = {12, "Mr A", 7.8, {14567, "ĐH A"}};
     
