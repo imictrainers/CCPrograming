@@ -10,7 +10,7 @@ struct Book
 int main10()
 {
     struct Book a;      //Single structure variable
-    struct Book* ptr;   //Pointer of Structure type
+    struct Book *ptr;   //Pointer of Structure type
     ptr = &a;
  
     struct Book b[10];  //Array of structure variables

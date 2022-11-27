@@ -4,7 +4,7 @@
 /* data-type variable-name[size];
    data-type array-name[size] = { list of values };
 */
-int main1() {
+int main(void) {
   //1. khai bao mang ky tu
 	char str[20];
 

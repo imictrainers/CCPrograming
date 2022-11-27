@@ -14,9 +14,9 @@ int main11()
     struct my_structure *ptr;
     ptr = &variable;
 
-    printf("NAME: %s\n", ptr->name);
-    printf("NUMBER: %d\n", ptr->number);
-    printf("RANK: %d", ptr->rank);
+    printf("NAME: %s\n", ptr -> name);
+    printf("NUMBER: %d\n", ptr -> number);
+    printf("RANK: %d", ptr -> rank);
 
     return 0;
 }

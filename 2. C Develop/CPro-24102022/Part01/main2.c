@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main2() {
+int main(void) {
   //1. khai bao mang ky tu
 	char str[20];
 	

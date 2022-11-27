@@ -27,5 +27,6 @@ void ask()
 }
 void main5()
 {
+    
     ask();
 }

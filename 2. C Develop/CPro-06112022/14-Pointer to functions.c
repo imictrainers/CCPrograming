@@ -9,12 +9,11 @@ int sum(int x, int y)
     return x+y;
 }
 
-int main( )
+int main()
 {
-    int (*fp)(int, int);
+    int (*fp)(int, int);jjk
     fp = sum;
     int s = fp(10, 15);
     printf("Sum is %d", s);
-
     return 0;
 }

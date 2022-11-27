@@ -7,7 +7,7 @@ float b = 5.5;
 float *ptr2 = &b;
 // *ptr1 = 2 is equivalent to a = 2
 // (*ptr1)++ is equivalent to a++
-// float z = *ptr2 + 4.2 is equivalent to float z = b + 4.2;
+// float z = *ptr2 + 4.2 is equivalent to float z = 5.5 + 4.2;
 
 //Here is one complete program:
 #include <stdio.h>
@@ -35,5 +35,6 @@ int main()
 10
 3795480300
 3795480300
+
 3795480304
 */

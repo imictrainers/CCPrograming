@@ -6,11 +6,12 @@ int arr[5] = { 1, 2, 3, 4, 5 };
 
 void main()
 {
+   int i = 0;
    int a[3] = {1, 2, 3};
-   int *p = a;    
-   for (int i = 0; i < 3; i++)
+   int *p = &a;    
+   for (i = 0; i < 3; i++)
    {
-      printf("%d", *p);
+      printf("%d", *p);  //*p => a[0]  p++ => a[i]
       p++;
    }
   return 0;
