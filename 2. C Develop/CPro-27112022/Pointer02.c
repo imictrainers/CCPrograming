@@ -4,7 +4,7 @@ void main(void)
 {
    int* ab;
    int m;
-   m=29;
+   m = 29;
 
    printf("\n\n Pointer : Cach xu ly con tro trong chuong trinh :\n"); 
    printf("------------------------------------------------------\n");

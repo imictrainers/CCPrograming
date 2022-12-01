@@ -23,6 +23,7 @@ void main(void)
     printf("\n Gia tri sau khi hoan doi :\n");
     printf("a = %d\n b = %d\n c = %d\n\n", a,b,c);   
 }
+
 void swapNumbers(int *x,int *y,int *z)
 {
     int tmp;

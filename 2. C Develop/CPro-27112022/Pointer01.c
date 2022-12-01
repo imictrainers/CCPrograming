@@ -3,7 +3,7 @@
 void main(void)
 {
 	int m=10,n,o;
-	int *z=&m ;
+	int *z=&m;
 
 	printf("\n\n Hien thi khai bao co ban cua con tro :\n");
 	printf("-------------------------------------------------------\n"); 
