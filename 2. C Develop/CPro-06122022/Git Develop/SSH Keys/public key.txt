@@ -1,0 +1,1 @@
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIAi/N2K4vZeBYrcDaxYUqn82CFRgcGkW2EBnwbsOuPhO imic.trainers@gmail.com
